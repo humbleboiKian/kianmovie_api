@@ -6,8 +6,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const movieRoutes = require("./api/movies");
-const authRoutes = require("./api/auth");
+const movieRoutes = require("./routes/movies");
+const authRoutes = require("./routes/auth");
 app.use("/api/auth", authRoutes);
 app.use("/api/movies", movieRoutes);
 
